@@ -1,8 +1,8 @@
-// webpack.config.js
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
+
 module.exports = {
-    resolve: {
-        fallback: {
-            "crypto": false // Don't include the crypto module in the bundle
-        }
-    }
-};
+    // Other rules...
+    plugins: [
+        new NodePolyfillPlugin()
+    ]
+}
