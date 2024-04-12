@@ -154,6 +154,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "browser": {
+    "crypto": false
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
